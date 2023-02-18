@@ -114,3 +114,36 @@ ul{
   height: 100%;
   border-radius: $border-radius-sm;
 }
+
+.box-cart{
+  left: 0;
+  display: none;
+  @include media-breakpoint-up(xxl){
+    width: 30%;
+  }
+  @include media-breakpoint-between(xl ,xxl){
+    width: 30%;
+  }
+  @include media-breakpoint-between(lg ,xl){
+    width: 36%;
+  }
+  @include media-breakpoint-between(md ,lg){
+    width: 47%;
+  }
+  @include media-breakpoint-between(sm ,md){
+    width: 63%;
+  }
+  .box-cart-body{
+    padding: 10px;
+    .empty-cart{
+      text-align: center;
+      .empty-cart-icon{
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+        font-size: 100px;
+        color: gainsboro;
+      }
+    }
+  }
+}//box-cart
