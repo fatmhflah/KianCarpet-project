@@ -1,0 +1,450 @@
+.main-header {
+  background-color: $light-color;
+  box-shadow: 0 -2px 5px rgb(0 0 0 / 50%);
+  position: relative;
+  z-index: 999;
+  .header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }//header-wrapper
+  .top-header{
+    height: 115px;
+    .header-logo{
+      width: 150px;
+      img{
+        width: 100%;
+      }
+
+    }//header-logo
+
+    .header-items{
+      align-items: center;
+      justify-content: end;
+      .icon{
+        @include font-size(30px);
+      }
+      .count{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        line-height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        top: 18px;
+        left: -4px;
+        background-color: $primary-color;
+        color: #fff;
+        @include font-size(11px);
+      }
+      .info-wrapper{
+        display: flex;
+        align-items: center;
+        position: relative;
+        &:after{
+          content: "";
+          display: block;
+          position: absolute;
+          left: -10px;
+          height: 30px;
+          border-right: 1px solid #777;
+        }
+        .info-icon{
+          width: 35px;
+          height: 40px;
+          margin-left: 10px;
+          img{
+            width: 100%;
+          }
+        }//info-icon
+        .info-content{
+          display: flex;
+          flex-direction: column;
+          .info-subtitle{
+            color: rgb(127 127 127);
+            @include font-size(11px);
+          }
+          .info-title{
+            color: $secondary-color;
+            @include font-size(20px)
+          }
+        }
+      }//info-wrapper
+      .wishlist-wrapper{
+        position: relative;
+      }//wishlist-wrapper
+      .cart-wrapper{
+        position: relative;
+        cursor: pointer;
+      }
+    }
+  }
+  .bottom-header{
+    align-items: center;
+    height: 55px;
+
+    .login-header-wrapper{
+      display: flex;
+      justify-content: end;
+      .buy-button{
+        background-color: $dark-color;
+        color: #fff;
+        font-weight: 700;
+        @include font-size(11px)
+      }
+      .login-button{
+        margin-right: 10px;
+        display: flex;
+        padding: 0;
+        &:hover{
+          color: $primary-color;
+        }
+        .login-btn-icon{
+          line-height: 0;
+          margin-left: 5px;
+          @include font-size(25px)
+        }
+      }
+    }
+  }//bottom-header
+
+  .desktop-header{
+    display: block;
+    @include media-breakpoint-down(lg){
+      display: none;
+    }
+  }
+  .mobile-header{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    position: relative;
+    @include media-breakpoint-down(lg){
+      display: flex;
+
+    }
+    &__logo{
+      width: 140px;
+      height: 50px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .icon{
+      @include font-size(30px);
+    }
+
+
+
+  }
+
+}//main-header
+.mobile-header-nav{
+  //height: 100%;
+  //box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  //background: #fff;
+  //width: 80%;
+  //z-index: 999999999;
+  //position: fixed;
+  //top: 0;
+  display: none;
+  @include media-breakpoint-down(lg){
+    //display: block;
+  }
+  .header-nav{
+    //border-bottom: 1px solid rgb(0 0 0 / 11%);
+    //padding: 33px 15px;
+    //display: flex;
+    //align-items: center;
+    .close-menu{
+      @include font-size(25px);
+      line-height: 0;
+    }
+
+  }
+}
+.mobile-menu-tab{
+  display: flex;
+  justify-content: space-between;
+  .mobile-tab-title {
+    width: 50%;
+    background-color: #e8e8e8;
+    &.active{
+      background-color: #c9c9c9;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+.bg-header-categories{
+  background-color: $primary-color;
+  min-width: 270px;
+  padding: 12px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+  height: 100%;
+  .icon-angle-down{
+    color: #fff;
+  }
+
+  li{
+    border-bottom: $menu_border;
+  }
+  .bg-header-categories-icon{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .bg-header-link{
+    color: #fff!important;
+  }
+
+}
+
+.menu {
+  background: $menu_background;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu li {
+  padding-left: 15px;
+  height: 100%;
+  @include media-breakpoint-down(lg){
+    border-bottom: 1px solid rgb(0 0 0 / 11%);
+  }
+
+}
+
+.menu,
+.menu li{
+  color: $menu_color;
+  a{
+    transition: all 0.2s;
+    &:hover{
+      color: $primary-color;
+    }
+  }
+
+}
+
+.menu li {
+  display: block;
+  white-space: nowrap; // prevent links form going to a new line
+  @include media-breakpoint-down(lg){
+    padding: 18px;
+  }
+  &:hover{
+    color: $primary-color;
+  }
+
+
+}
+.menu .menu-list{
+  height: 100%;
+
+
+}
+.menu-category{
+  display: none;
+}
+
+.menu-dropdown,
+.menu input[type="checkbox"] { // hide defaults
+  @include hide;
+}
+.menu-dropdown {
+  @include media-breakpoint-down(lg){
+    margin-top: 10px!important;
+  }
+
+}
+
+.menu label:hover {
+  cursor: pointer;
+}
+
+/* narrow styles */
+
+//@media screen and (max-width: $menu_breakpoint) {
+//  // hide navigation and right icons
+//  .menu > ul,
+//  .menu-righticon {
+//    @include hide;
+//  }
+//  input[type="checkbox"]:checked + ul {
+//    @include show;
+//  }
+//}
+
+/* large styles */
+
+@media screen and (min-width: 992px) {
+  // hide show navigation button and checkboxes
+  .menu > label,
+  input[type="checkbox"] {
+    @include hide;
+  }
+  //.menu a {
+  //  padding: $menu_padding;
+  //}
+  // align items and style them
+  .menu > ul > li {
+    display: inline-block;
+  }
+  // hover logics
+  .menu-hasdropdown {
+    position: relative;
+    &:hover {
+      > ul {
+        @include show;
+      }
+    }
+
+  }
+  // dropdown position and style
+  .menu-hasdropdown > ul {
+    min-width: 270px;
+    border: 1px solid $menu_border;
+    position: absolute;
+    top:100%;
+    right: 0;
+    background: $menu_background;
+    z-index: 999;
+  }
+  // flyout position
+  .menu-hasflyout > ul {
+    right: 100%;
+    top:0;
+  }
+  .menu-hasflyout .menu-downicon {
+    @include hide;
+  }
+}
+
+/* look and feel only, not needed for core menu*/
+
+// optional animation for display none/block
+@keyframes grow {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu-dropdown li{
+  padding: 12px;
+  border-bottom: 0;
+  @include media-breakpoint-down(lg){
+    padding: 12px 0;
+  }
+  &:hover{
+    background-color: #f7f7f7;
+  }
+}
+
+.menu-dropdown a {
+  //padding: $menu_padding;
+  //border-bottom: $menu_border;
+  //line-height: 25px;
+  //font-weight: 400;
+  //@include font-size(14px);
+
+}
+
+
+/* narrow  */
+@media screen and (max-width: $menu_breakpoint) {
+  .menu > label {
+    background: $menu_toggle_background;
+    text-align: right;
+    background: #ebebeb;
+    display: block;
+    padding: 14px 18px;
+  }
+  .menu a {
+    //padding: $menu_padding;
+  }
+  .menu > ul i {
+    //float: right;
+    //padding: $menu_icon_padding;
+    //background: darken($menu_background,15%);
+  }
+  //.menu-dropdown  a {
+  //  background: darken($menu_background,5%);
+  //}
+  //.menu-hasflyout > ul a {
+  //  background: darken($menu_background,10%);
+  //}
+}
+@media screen and (min-width: $menu_breakpoint + 1px) {
+  .menu {
+    margin: 0 auto;
+    background-color: #fff;
+    height: 100%;
+  }
+}
+.menu-hasdropdown{
+  &.active{
+
+
+  }
+}
+
+.menu-upicon{
+  display: none;
+}
+.header-search{
+  position: relative;
+  //@include media-breakpoint-down(sm){
+  //  display: none;
+  //}
+  &__input{
+    border: 1px solid #eee;
+    border-radius: $border-radius-sm;
+    width: 100%;
+    height: 46px;
+    color: #777;
+    padding-right: 20px;
+    @include media-breakpoint-down(lg){
+      height: 60px;
+    }
+  }
+  &__button{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    padding: 0;
+    .icon{
+      color: #777;
+    }
+  }
+}//header-search

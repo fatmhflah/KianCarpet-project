@@ -1,0 +1,167 @@
+header.main-header(id="home")
+    .container
+        .desktop-header
+            .row.top-header
+                .header-wrapper
+                    .col-auto.col-lg-2
+                        .header-logo
+                            a(href='#' alt='logo')
+                                img(src='../images/kian-carpet-logo.png')
+                    .col-auto.col-lg-5
+                        .header-search
+                            .form(method='get')
+                                input.header-search__input(type='text' placeholder='محصول خود را جستجو کنید...')
+                                button.main-btn.header-search__button(type='submit')
+                                    i.icon.bi.bi-search
+                    .col-auto.col-lg-4
+                        .row.header-items
+                            .col-auto
+                                .info-wrapper
+                                    .info-icon
+                                        img(src='../images/info-icon.svg')
+                                    .info-content
+                                        span.info-subtitle نیاز به راهنمایی دارید؟
+                                        a(href='tel:0315570705').info-title 031-55570705
+
+
+                            .col-auto
+                                .wishlist-wrapper
+                                    i.icon.bi.bi-suit-heart
+                                    span.count 0
+                            .col-auto
+                                .cart-wrapper
+                                    i.icon.bi.bi-cart
+                                    span.count 5
+
+
+            .row.bottom-header
+                .col-lg-8.h-100
+                    nav.menu(role='navigation')
+
+                        input#menu(type='checkbox')
+                        ul.menu-list
+                            li.menu-hasdropdown.header-categories-nav
+                                div.bg-header-categories
+                                    div
+                                        span.bg-header-categories-icon
+                                            img(src='../images/category-icon.svg')
+                                        span.bg-header-link  دسته بندی مجصولات
+                                    label.icon-angle-down.main-nav-icon(title='toggle menu', for='products')
+                                        i.bi.bi-chevron-down
+                                input#products(type='checkbox')
+                                ul.menu-dropdown
+                                    li
+                                        a(href='') فرش کودک
+                                    li.menu-hasdropdown.menu-hasflyout
+                                        a.d-flex.justify-content-between(href='')
+                                            | فرش آشپزخانه
+                                            label(title='toggle menu', for='service')
+                                                i.bi.bi-chevron-down.menu-downicon
+                                                i.bi.bi-chevron-left.menu-righticon
+                                        input#service(type='checkbox')
+                                        ul.menu-dropdown
+                                            li
+                                                a(href='') فرش ایران
+                                            li
+                                                a(href='') فرش فیروزه
+                                            li
+                                                a(href='') فرش نگار
+
+                                    li.menu-hasdropdown.menu-hasflyout
+                                        a.d-flex.justify-content-between(href='')
+                                            | فرش بیضی
+                                            label(title='toggle menu', for='services')
+                                                i.fa.fa-caret-down.menu-downicon
+                                                i.bi.bi-chevron-left.menu-righticon
+                                        input#services(type='checkbox')
+                                        ul.menu-dropdown
+                                            li
+                                                a(href='') فرش 1000 شانه
+                                            li
+                                                a(href='') فرش 2000 شانه
+                                            li
+                                                a(href='') فرش 5000 شانه
+                            li
+                                a(href='#') صفحه اصلی
+
+                            li
+                                a(href='#') درباره ما
+                            li
+                                a(href='#') تماس با ما
+                .col-lg-4.visibale-lg
+                    .login-header-wrapper
+
+                        button.btn.buy-button   به صرفه خرید کنید
+                        button.btn.login-button
+                            i.bi.bi-person.login-btn-icon
+                            | ورود/ ثبت نام
+        .mobile-header
+
+            .mobile-header__close
+                i.bi.bi-list.icon
+
+            .mobile-header__logo
+                img(src='images/kian-carpet-logo.png')
+            .mobile-header__cart.cart-wrapper
+                i.bi.bi-cart.icon
+
+
+.mobile-header-nav.shared-box
+    header.header-nav.shared-box__header
+        span.close.close-menu
+            i.bi.bi-x-circle.ms-2
+            span.title بستن
+    .header-search
+        .form(method='get')
+            input.header-search__input(type='text' placeholder='جستجوی محصولات...')
+            button.main-btn.header-search__button(type='submit')
+                i.icon.bi.bi-search
+    nav.menu(role='navigation')
+        ul.mobile-menu-tab
+            li.mobile-tab-title.mobile-pages-title.active منو
+            li.mobile-tab-title.mobile-categories-title  دسته بندی
+
+        ul.menu-list.mobile-menu-active
+            li
+                a(href='#') صفحه اصلی
+            li
+                a(href='#') درباره ما
+            li
+                a(href='#') تماس با ما
+        ul.menu-category
+            ul
+                li
+                    a.menu-title(href='') فرش کودک
+                li.menu-hasdropdown.menu-hasflyout.active
+                    a.menu-title.d-flex.justify-content-between
+                        span فرش آشپزخانه
+                        i.bi.bi-chevron-down.menu-downicon
+                        i.bi.bi-chevron-up.menu-upicon
+
+                    ul.menu-dropdown
+                        li
+                            a(href='') فرش ایران
+                        li
+                            a(href='') فرش فیروزه
+                        li
+                            a(href='') فرش نگار
+
+                li.menu-hasdropdown.menu-hasflyout
+                    a.menu-title.d-flex.justify-content-between
+                        span فرش بیضی
+                        i.bi.bi-chevron-down.menu-downicon
+                        i.bi.bi-chevron-up.menu-upicon
+
+
+                    ul.menu-dropdown
+                        li
+                            a(href='') فرش 1000 شانه
+                        li
+                            a(href='') فرش 2000 شانه
+                        li
+                            a(href='') فرش 5000 شانه
+
+
+
+
+
