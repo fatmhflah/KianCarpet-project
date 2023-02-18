@@ -16,3 +16,18 @@
     padding: 10px 20px;
   }
 }
+
+.buy-btn{
+  width: 100%;
+  border: 1px solid #e0e0e2;
+  font-size: 13px;
+  margin-top: 5px;
+  @include font-size(14px);
+  &:hover{
+    border: 1px solid red;
+    color: black;
+  }
+  &:before{
+    margin-left: 5px;
+  }
+}
