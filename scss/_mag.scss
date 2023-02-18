@@ -1,0 +1,55 @@
+.mag{
+  .mag-swiper{
+    overflow: hidden;
+  }
+  .mag-card{
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #e0e0e2;
+    border-radius: $border-radius-sm;
+
+    &:hover .mag-card__img{
+      transform: scale(1.2);
+    }
+
+    .mag-card-header{
+      overflow: hidden;
+      height: 200px;
+    }
+
+    .mag-card-body{
+      padding: 15px;
+    }
+
+    &__title{
+      @include font-size(18px);
+      line-height: 1.5;
+      font-weight: 600;
+      margin-top: 15px;
+      height: 55px;
+      display: -webkit-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: initial;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    &__subtitle{
+      display: -webkit-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: initial;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    &__img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: all 0.5s;
+    }
+  }//mag-card
+
+}
