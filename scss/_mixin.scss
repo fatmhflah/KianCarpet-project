@@ -1,0 +1,31 @@
+@mixin fontFace($font-family, $font-style, $font-weight, $font-src) {
+  @font-face {
+    font-family: iranyekanCustom;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    src: url($font-src + ".woff") format("woff"),
+    url($font-src + ".woff2") format("woff2"),
+    url($font-src + ".eot") format("eot"),
+    url($font-src +".ttf") format("ttf");
+  }
+}
+@mixin show () {
+  display: block;
+  animation: grow .5s ease-in-out; // optional animation
+}
+
+@mixin hide () {
+  display: none;
+}
+@mixin media-breakpoint-between-1400-1600{
+  @media (min-width: 1400px)and (max-width: 1600px){
+    @content
+  }
+}
+@mixin media-breakpoint-up-1600{
+  @media (min-width: 1600px){
+    @content
+  }
+}
+
+
