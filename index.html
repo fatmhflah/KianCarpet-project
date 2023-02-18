@@ -4,10 +4,472 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>kian carpet</title>
   <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="stylesheet" href="../stylesheets/swiper-bundle.min.css">
+  <script src="../js/swiper-bundle.min.js"></script>
 </head>
 <html lang="fa" dir="rtl">
   <body>
+    <header class="main-header" id="home">
+      <div class="container">
+        <div class="desktop-header">
+          <div class="row top-header">
+            <div class="header-wrapper">
+              <div class="col-auto col-lg-2">
+                <div class="header-logo"><a href="#" alt="logo"><img src="../images/kian-carpet-logo.png"></a></div>
+              </div>
+              <div class="col-auto col-lg-5">
+                <div class="header-search">
+                  <div class="form" method="get">
+                    <input class="header-search__input" type="text" placeholder="محصول خود را جستجو کنید...">
+                    <button class="main-btn header-search__button" type="submit"><i class="icon bi bi-search"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-auto col-lg-4">
+                <div class="row header-items">
+                  <div class="col-auto">
+                    <div class="info-wrapper">
+                      <div class="info-icon"><img src="../images/info-icon.svg"></div>
+                      <div class="info-content"><span class="info-subtitle">نیاز به راهنمایی دارید؟</span><a class="info-title" href="tel:0315570705">031-55570705</a></div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="wishlist-wrapper"><i class="icon bi bi-suit-heart"></i><span class="count">0</span></div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="cart-wrapper"><i class="icon bi bi-cart"></i><span class="count">5</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row bottom-header">
+            <div class="col-lg-8 h-100">
+              <nav class="menu" role="navigation">
+                <input id="menu" type="checkbox">
+                <ul class="menu-list">
+                  <li class="menu-hasdropdown header-categories-nav">
+                    <div class="bg-header-categories">
+                      <div><span class="bg-header-categories-icon"><img src="../images/category-icon.svg"></span><span class="bg-header-link"> دسته بندی مجصولات</span></div>
+                      <label class="icon-angle-down main-nav-icon" title="toggle menu" for="products"><i class="bi bi-chevron-down"></i></label>
+                    </div>
+                    <input id="products" type="checkbox">
+                    <ul class="menu-dropdown">
+                      <li><a href="">فرش کودک</a></li>
+                      <li class="menu-hasdropdown menu-hasflyout"><a class="d-flex justify-content-between" href="">فرش آشپزخانه
+                          <label title="toggle menu" for="service"><i class="bi bi-chevron-down menu-downicon"></i><i class="bi bi-chevron-left menu-righticon"></i></label></a>
+                        <input id="service" type="checkbox">
+                        <ul class="menu-dropdown">
+                          <li><a href="">فرش ایران</a></li>
+                          <li><a href="">فرش فیروزه</a></li>
+                          <li><a href="">فرش نگار</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-hasdropdown menu-hasflyout"><a class="d-flex justify-content-between" href="">فرش بیضی
+                          <label title="toggle menu" for="services"><i class="fa fa-caret-down menu-downicon"></i><i class="bi bi-chevron-left menu-righticon"></i></label></a>
+                        <input id="services" type="checkbox">
+                        <ul class="menu-dropdown">
+                          <li><a href="">فرش 1000 شانه</a></li>
+                          <li><a href="">فرش 2000 شانه</a></li>
+                          <li><a href="">فرش 5000 شانه</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">صفحه اصلی</a></li>
+                  <li><a href="#">درباره ما</a></li>
+                  <li><a href="#">تماس با ما</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-4 visibale-lg">
+              <div class="login-header-wrapper">
+                <button class="btn buy-button">  به صرفه خرید کنید</button>
+                <button class="btn login-button"><i class="bi bi-person login-btn-icon"></i>ورود/ ثبت نام</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-header">
+          <div class="mobile-header__close"><i class="bi bi-list icon"></i></div>
+          <div class="mobile-header__logo"><img src="images/kian-carpet-logo.png"></div>
+          <div class="mobile-header__cart cart-wrapper"><i class="bi bi-cart icon"></i></div>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-header-nav shared-box">
+      <header class="header-nav shared-box__header"><span class="close close-menu"><i class="bi bi-x-circle ms-2"></i><span class="title">بستن</span></span></header>
+      <div class="header-search">
+        <div class="form" method="get">
+          <input class="header-search__input" type="text" placeholder="جستجوی محصولات...">
+          <button class="main-btn header-search__button" type="submit"><i class="icon bi bi-search"></i></button>
+        </div>
+      </div>
+      <nav class="menu" role="navigation">
+        <ul class="mobile-menu-tab">
+          <li class="mobile-tab-title mobile-pages-title active">منو</li>
+          <li class="mobile-tab-title mobile-categories-title"> دسته بندی</li>
+        </ul>
+        <ul class="menu-list mobile-menu-active">
+          <li><a href="#">صفحه اصلی</a></li>
+          <li><a href="#">درباره ما</a></li>
+          <li><a href="#">تماس با ما</a></li>
+        </ul>
+        <ul class="menu-category">
+          <ul>
+            <li><a class="menu-title" href="">فرش کودک</a></li>
+            <li class="menu-hasdropdown menu-hasflyout active"><a class="menu-title d-flex justify-content-between"><span>فرش آشپزخانه</span><i class="bi bi-chevron-down menu-downicon"></i><i class="bi bi-chevron-up menu-upicon"></i></a>
+              <ul class="menu-dropdown">
+                <li><a href="">فرش ایران</a></li>
+                <li><a href="">فرش فیروزه</a></li>
+                <li><a href="">فرش نگار</a></li>
+              </ul>
+            </li>
+            <li class="menu-hasdropdown menu-hasflyout"><a class="menu-title d-flex justify-content-between"><span>فرش بیضی</span><i class="bi bi-chevron-down menu-downicon"></i><i class="bi bi-chevron-up menu-upicon"></i></a>
+              <ul class="menu-dropdown">
+                <li><a href="">فرش 1000 شانه</a></li>
+                <li><a href="">فرش 2000 شانه</a></li>
+                <li><a href="">فرش 5000 شانه</a></li>
+              </ul>
+            </li>
+          </ul>
+        </ul>
+      </nav>
+    </div>
     <main id="main">
+      <section class="main-slider">
+        <div class="container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="#"><img src="images/item4-slider.jpg"></a></div>
+              <div class="swiper-slide"><a href="#"><img src="images/item5-slider.jpg"></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"><span class="icon"></span></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
+      <!--main-slider-->
+      <section class="index-sec">
+        <div class="container">
+          <div class="row banners__wrapper">
+            <div class="col-lg-5">
+              <div class="banners__item"><img src="images/banner-carpet20.jpg"><img src="images/banner-carpet17.webp"></div>
+            </div>
+            <div class="col-lg-7 col-auto">
+              <div class="banners__item item-1"><img src="images/banner-carpet26.jpg"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--banner-wrapper-->
+      <section class="index-sec category">
+        <div class="container">
+          <div class="index-widget-header">
+            <h3 class="title-line">دسته بندی محصولات</h3>
+            <button class="btn box-more"><span>مشاهده همه</span><i class="icon bi bi-arrow-left"></i></button>
+          </div>
+          <div class="row">
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <article class="category-card"><a class="category-link" href="#">
+                  <header class="category-card-header"><img class="category-img" src="images/farsh1.jpg"><img class="category-img category-img-center" src="images/farsh3.jpg"><img class="category-img" src="images/farsh2.jpg"></header>
+                  <footer class="category-card-footer">
+                    <p class="title">فرش قرمز</p>
+                  </footer></a></article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <article class="category-card"><a class="category-link" href="#">
+                  <header class="category-card-header"><img class="category-img" src="images/farsh4.jpg"><img class="category-img category-img-center" src="images/farsh6.png"><img class="category-img" src="images/farsh5.jpg"></header>
+                  <footer class="category-card-footer">
+                    <p class="title">فرش آبی</p>
+                  </footer></a></article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <article class="category-card"><a class="category-link" href="#">
+                  <header class="category-card-header"><img class="category-img" src="images/farsh2.jpg"><img class="category-img category-img-center" src="images/farsh1.jpg"><img class="category-img" src="images/farsh3.jpg"></header>
+                  <footer class="category-card-footer">
+                    <p class="title">فرش طوسی</p>
+                  </footer></a></article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <article class="category-card"><a class="category-link" href="#">
+                  <header class="category-card-header"><img class="category-img" src="images/farsh3.jpg"><img class="category-img category-img-center" src="images/farsh2.jpg"><img class="category-img" src="images/farsh1.jpg"></header>
+                  <footer class="category-card-footer">
+                    <p class="title">فرش کرم</p>
+                  </footer></a></article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <article class="category-card"><a class="category-link" href="#">
+                  <header class="category-card-header"><img class="category-img" src="images/farsh1.jpg"><img class="category-img category-img-center" src="images/farsh5.jpg"><img class="category-img" src="images/farsh6.png"></header>
+                  <footer class="category-card-footer">
+                    <p class="title">فرش نارنجی</p>
+                  </footer></a></article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <article class="category-card"><a class="category-link" href="#">
+                  <header class="category-card-header"><img class="category-img" src="images/farsh1.jpg"><img class="category-img category-img-center" src="images/farsh4.jpg"><img class="category-img" src="images/farsh2.jpg"></header>
+                  <footer class="category-card-footer">
+                    <p class="title">فرش قرمز</p>
+                  </footer></a></article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <article class="category-card"><a class="category-link" href="#">
+                  <header class="category-card-header"><img class="category-img" src="images/farsh4.jpg"><img class="category-img category-img-center" src="images/farsh3.jpg"><img class="category-img" src="images/farsh2.jpg"></header>
+                  <footer class="category-card-footer">
+                    <p class="title">فرش فیروزه ای</p>
+                  </footer></a></article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <article class="category-card"><a class="category-link" href="#">
+                  <header class="category-card-header"><img class="category-img" src="images/farsh3.jpg"><img class="category-img category-img-center" src="images/farsh5.jpg"><img class="category-img" src="images/farsh2.jpg"></header>
+                  <footer class="category-card-footer">
+                    <p class="title">فرش سبز</p>
+                  </footer></a></article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <article class="category-card"><a class="category-link" href="#">
+                  <header class="category-card-header"><img class="category-img" src="images/farsh4.jpg"><img class="category-img category-img-center" src="images/farsh1.jpg"><img class="category-img" src="images/farsh2.jpg"></header>
+                  <footer class="category-card-footer">
+                    <p class="title">فرش مشکی</p>
+                  </footer></a></article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <article class="category-card"><a class="category-link" href="#">
+                  <header class="category-card-header"><img class="category-img" src="images/farsh1.jpg"><img class="category-img category-img-center" src="images/farsh5.jpg"><img class="category-img" src="images/farsh2.jpg"></header>
+                  <footer class="category-card-footer">
+                    <p class="title">فرش طوسی</p>
+                  </footer></a></article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <article class="category-card"><a class="category-link" href="#">
+                  <header class="category-card-header"><img class="category-img" src="images/farsh1.jpg"><img class="category-img category-img-center" src="images/farsh2.jpg"><img class="category-img" src="images/farsh4.jpg"></header>
+                  <footer class="category-card-footer">
+                    <p class="title">فرش گلبهی</p>
+                  </footer></a></article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+              <article class="category-card"><a class="category-link" href="#">
+                  <header class="category-card-header"><img class="category-img" src="images/farsh1.jpg"><img class="category-img category-img-center" src="images/farsh3.jpg"><img class="category-img" src="images/farsh2.jpg"></header>
+                  <footer class="category-card-footer">
+                    <p class="title">فرش آبی</p>
+                  </footer></a></article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--category-->
+      <section class="index-sec products-wrapper">
+        <div class="container">
+          <header class="index-widget-header">
+            <h3 class="title-line">محصولات پرفروش</h3>
+            <button class="btn box-more"><span>مشاهده همه</span><i class="icon bi bi-arrow-left"></i></button>
+          </header>
+          <div class="swiper2 swiper-products">
+            <div class="swiper-wrapper">
+              <article class="swiper-slide product-card">
+                <div class="sale-perc">55%</div>
+                <div class="product-card__img"><a href=""><img class="show-img" src="images/best-product1.jpg"><img class="show-on-hover" src="images/best-product-h-1.jpg"></a></div>
+                <div class="product-card__body">
+                  <p class="title"> فرش ماشینی طرح افشان گلریز زمینه سرمه ای</p>
+                  <div class="product-card-footer">
+                    <div class="price">
+                      <div class="price__off"><span class="number">200000</span><span>تومان</span></div>
+                      <div class="price__current"><span class="number">250000</span><span>تومان</span></div>
+                    </div>
+                    <button class="btn icon bi bi-cart buy-btn">افزودن به سبد خرید</button>
+                  </div>
+                </div>
+              </article>
+              <article class="swiper-slide product-card">
+                <div class="product-card__img"><a href="#"><img class="show-img" src="images/best-product-2.jpg"><img class="show-on-hover" src="images/best-product-h-2.jpg"></a></div>
+                <div class="product-card__body">
+                  <p class="title">فرش کلاسیک گل برجسته زمینه دودی کد 814</p>
+                  <div class="product-card-footer">
+                    <div class="price">
+                      <div class="price__current"><span class="number">250000</span><span>تومان</span></div>
+                    </div>
+                    <button class="btn icon bi bi-cart buy-btn">افزودن به سبد خرید</button>
+                  </div>
+                </div>
+              </article>
+              <article class="swiper-slide product-card">
+                <div class="sale-perc">58%</div>
+                <div class="product-card__img"><a href="#"><img class="show-img" src="images/best-product-3.jpg"><img class="show-on-hover" src="images/best-product-h-3.jpg"></a></div>
+                <div class="product-card__body">
+                  <p class="title">فرش ماشینی گل برجسته 700 شانه زمینه صدفی کد 818</p>
+                  <div class="product-card-footer">
+                    <div class="price">
+                      <div class="price__off"><span class="number">1000000</span><span>تومان</span></div>
+                      <div class="price__current"><span class="number">4850000</span><span>تومان</span></div>
+                    </div>
+                    <button class="btn icon bi bi-cart buy-btn">افزودن به سبد خرید</button>
+                  </div>
+                </div>
+              </article>
+              <article class="swiper-slide product-card">
+                <div class="product-card__img"><a href="#"><img class="show-img" src="images/best-product-4.jpg"><img class="show-on-hover" src="images/best-product-h-4.jpg"></a></div>
+                <div class="product-card__body">
+                  <p class="title">فرش ماشینی 700 شانه گل برجسته زمینه کرم حاشیه دلفینی کد 3071</p>
+                  <div class="product-card-footer">
+                    <div class="price">
+                      <div class="price__current"><span class="number">250000</span><span>تومان</span></div>
+                    </div>
+                    <button class="btn icon bi bi-cart buy-btn">افزودن به سبد خرید</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-pagination"></div>
+            <!--.swiper-button-prev.swiper-nav-->
+            <!--    span.icon-->
+            <!--.swiper-button-next.swiper-nav-->
+          </div>
+        </div>
+      </section>
+      <!--best-products-->
+      <script>
+        let swiper = new Swiper(".swiper", {
+            loop: true,
+            fadeEffect: {
+                crossFade: true
+            },
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000,
+            },
+            breakpoints: {
+        
+                576: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    navigation: false
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                992: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                1200: {
+                    slidesPerView: 1,
+                    spaceBetween: 50,
+                },
+                1400: {
+                    slidesPerView: 1,
+                    spaceBetween: 50,
+                },
+            },
+        });
+        
+        let swiper2 = new Swiper(".swiper2", {
+            loop: true,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        
+            autoplay: false,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20,
+                    navigation: false
+                },
+                576: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 15,
+        
+                },
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 15,
+                },
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+        
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                1400: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+        
+            },
+        });
+      </script>
     </main>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row justify-content-between flex-column flex-lg-row">
+          <div class="col-auto col-lg-4">
+            <div class="footer-box">
+              <div class="footer-box-logo"><img src="images/kian-carpet-logo.png"></div>
+              <div class="footer-box__body">
+                <p class="text">بزرگترین و تخصصی‌ترین فروشگاه فرش ایران با بیش از ۸ سال تجربه‌، پیش روی شماست. وجودِ انواع فرش‌ ماشینی، فرش‌ دستبافت، فرش کلاسیک، فرش کودک و تابلو فرش به همراه کامل‌ترین مجموعه فرش فانتزی و وارداتی از کشورهایی مانند ترکیه و هند چشم اندازی تماشایی از هنرِ فرش ایران و جهان را در شهر فرش آفریده است.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto col-lg-2">
+            <div class="footer-box__title">
+              <h4 class="text">تماس با ما</h4>
+            </div>
+            <div class="footer-box__body">
+              <ul class="footer-list">
+                <li class="footer-item"><a href="">وبلاگ</a></li>
+                <li class="footer-item"><a href="">راهنمای خرید</a></li>
+                <li class="footer-item"><a href="">سوالات متداول</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-auto col-lg-2">
+            <div class="footer-box__title">
+              <h4 class="text">منوی سایت</h4>
+            </div>
+            <div class="footer-box__body">
+              <ul class="footer-list">
+                <li class="footer-item"><a href="">وبلاگ</a></li>
+                <li class="footer-item"><a href="">راهنمای خرید</a></li>
+                <li class="footer-item"><a href="">سوالات متداول</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-auto col-lg-4 col-xl-3">
+            <div class="footer-box__title">
+              <h4 class="text">ما را دنبال کنید</h4>
+            </div>
+            <div class="footer-box__body">
+              <ul class="social-icon-list">
+                <li class="social-icon-item"><a href=""><i class="icon bi bi-whatsapp"></i></a></li>
+                <li class="social-icon-item"><a href=""><i class="icon bi bi-telegram"></i></a></li>
+                <li class="social-icon-item"><a href=""><i class="icon bi bi-instagram"></i></a></li>
+              </ul><a class="enamd" href="">
+                <div class="box"><img src="images/enamad1.png"></div>
+                <div class="box"><img src="images/enamad2.webp"></div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
