@@ -1,0 +1,31 @@
+@import "mixin";
+@import "variables";
+
+@include fontFace("iranyekanCustom", "normal", 200, "../stylesheets/fonts/iranyekan_numbers/iranyekanweblight(fanum)");
+@include fontFace("iranyekanCustom", "normal", 400, "../stylesheets/fonts/iranyekan_numbers/iranyekanwebregular(fanum)");
+@include fontFace("iranyekanCustom", "normal", 700, "../stylesheets/fonts/iranyekan_numbers/iranyekanwebbold(fanum)");
+
+body{
+  background-color: $body-color ;
+  font-family: iranyekanCustom;
+}
+
+input:focus{
+  outline: 0;
+}
+a{
+  color: $dark-color;
+  text-decoration: none;
+  &:hover{
+    color: #000;
+  }
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.icon{
+  font-size: 20px;
+  cursor: pointer;
+}
