@@ -29,3 +29,77 @@ ul{
   font-size: 20px;
   cursor: pointer;
 }
+
+.index-sec{
+  margin: 80px 0;
+  @include media-breakpoint-down(lg){
+    margin: 25px 0;
+  }
+  @include media-breakpoint-between(lg,xl){
+    margin: 30px 0;
+  }
+
+  .index-widget-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 60px;
+    font-weight: 600;
+    @include font-size(22px);
+    &:before{
+      position: absolute;
+      bottom: -9px;
+      right: 0;
+      left: 0;
+      background-color: #f3f3f3;
+      height: 2px;
+      content: "";
+      z-index: 0;
+      @include media-breakpoint-down(lg){
+        bottom: -5px;
+      }
+    }
+
+    .title-line{
+      @include font-size(21px);
+      font-weight: 900;
+      @include media-breakpoint-down(lg){
+        @include font-size(18px);
+      }
+      &:before{
+        content: "";
+        width: 130px;
+        height: 3px;
+        margin-top: 5px;
+        border-radius: 20px;
+        background-color: $primary-color;
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 42px;
+        @include media-breakpoint-down(lg){
+          top: 32px;
+        }
+      }
+    }
+    .box-more{
+      display: flex;
+      align-items: center;
+      @include font-size(16px);
+      @include media-breakpoint-down(lg){
+        @include font-size(14px);
+      }
+    }
+
+    .icon{
+      display: inline-block;
+      height: 18px;
+      margin-right: 3px;
+      @include font-size(16px)
+    }
+
+  }//index-widget-header
+}//index-sec

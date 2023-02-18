@@ -1,2 +1,80 @@
 extends partials/layout
 block main
+    section.main-slider
+        .container
+            .swiper
+                .swiper-wrapper
+                    .swiper-slide
+                        a(href='#')
+                            img(src='images/item4-slider.jpg')
+                    .swiper-slide
+                        a(href='#')
+                            img(src='images/item5-slider.jpg')
+
+                .swiper-pagination
+                .swiper-button-prev
+                    span.icon
+                .swiper-button-next
+                .swiper-scrollbar
+    //main-slider
+    section.index-sec
+        .container
+            .row.banners__wrapper
+                .col-lg-5
+                    .banners__item
+                        img(src='images/banner-carpet20.jpg')
+                        img(src='images/banner-carpet17.webp')
+                .col-lg-7.col-auto
+                    .banners__item.item-1
+                        img(src='images/banner-carpet26.jpg')
+
+
+
+    //banner-wrapper_banner-wrapper.scss
+
+
+    block script
+        script.
+            let swiper = new Swiper(".swiper", {
+                loop: true,
+                fadeEffect: {
+                    crossFade: true
+                },
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                autoplay: {
+                    delay: 3000,
+                },
+                breakpoints: {
+
+                    576: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                        navigation: false
+                    },
+                    768: {
+                        slidesPerView: 1,
+                        spaceBetween: 40,
+                    },
+                    992: {
+                        slidesPerView: 1,
+                        spaceBetween: 40,
+                    },
+                    1200: {
+                        slidesPerView: 1,
+                        spaceBetween: 50,
+                    },
+                    1400: {
+                        slidesPerView: 1,
+                        spaceBetween: 50,
+                    },
+                },
+            });
+
