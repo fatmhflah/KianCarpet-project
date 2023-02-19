@@ -33,7 +33,7 @@
       justify-content: center;
       align-items: center;
       background-color: #fff!important;
-      color: $primary-color;
+      color: $secondary-color;
       font-weight: bold;
       top: auto;
       bottom: 30px;
@@ -54,7 +54,7 @@
       height: 100%;
       width: 100%;
       object-fit: cover;
-      border-radius: $border-radius-sm;
+      //border-radius: $border-radius-sm;
     }
 
   }//swiper

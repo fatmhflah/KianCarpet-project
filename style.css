@@ -10810,6 +10810,11 @@ ul {
   padding: 0;
 }
 
+@media only screen and (min-width: 1600px) {
+  .container {
+    max-width: 90%;
+  }
+}
 .icon {
   font-size: 20px;
   cursor: pointer;
@@ -10917,6 +10922,108 @@ ul {
   border-radius: 5px;
 }
 
+.back-to-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ef4056;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 50px;
+  right: 15px;
+  z-index: 99;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+}
+.back-to-top.show {
+  opacity: 1;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #313135 !important;
+  width: 15px !important;
+  border-radius: 50px !important;
+  padding: 3px 0 !important;
+}
+
+.shared-box {
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background: #fff;
+  width: 80%;
+  z-index: 999999999;
+  position: fixed;
+  top: 0;
+}
+.shared-box__header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+  padding: 33px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.shared-box__header .title {
+  margin: 0;
+  font-size: 1rem;
+}
+.shared-box__header .close {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.box-cart {
+  left: 0;
+  display: none;
+}
+@media (min-width: 1400px) {
+  .box-cart {
+    width: 30%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .box-cart {
+    width: 30%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .box-cart {
+    width: 36%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .box-cart {
+    width: 47%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .box-cart {
+    width: 63%;
+  }
+}
+.box-cart .box-cart-body {
+  padding: 10px;
+}
+.box-cart .box-cart-body .empty-cart {
+  text-align: center;
+}
+.box-cart .box-cart-body .empty-cart .empty-cart-icon {
+  width: 100%;
+  display: inline-block;
+  height: 100%;
+  font-size: 100px;
+  color: gainsboro;
+}
+
 .main-btn {
   border: none;
   background-color: transparent;
@@ -10938,6 +11045,8 @@ ul {
 .buy-btn {
   width: 100%;
   border: 1px solid #e0e0e2;
+  background-color: #ef4056;
+  color: #fff;
   font-size: 13px;
   margin-top: 5px;
   font-size: 0.875rem;
@@ -10994,7 +11103,7 @@ ul {
   position: absolute;
   top: 18px;
   left: -4px;
-  background-color: #ef4056;
+  background-color: #313135;
   color: #fff;
   font-size: 0.6875rem;
 }
@@ -11028,7 +11137,7 @@ ul {
   font-size: 0.6875rem;
 }
 .main-header .top-header .header-items .info-wrapper .info-content .info-title {
-  color: #061738;
+  color: #313135;
   font-size: 1.25rem;
 }
 .main-header .top-header .header-items .wishlist-wrapper {
@@ -11047,7 +11156,7 @@ ul {
   justify-content: end;
 }
 .main-header .bottom-header .login-header-wrapper .buy-button {
-  background-color: #000;
+  background-color: #313135;
   color: #fff;
   font-weight: 700;
   font-size: 0.6875rem;
@@ -11129,7 +11238,8 @@ ul {
   background-color: #e8e8e8;
 }
 .mobile-menu-tab .mobile-tab-title.active {
-  background-color: #c9c9c9;
+  background-color: #313135;
+  color: #fff;
 }
 
 .bg-header-categories {
@@ -11201,7 +11311,7 @@ ul {
 }
 @media (max-width: 991.98px) {
   .menu li {
-    padding: 18px;
+    padding: 12px;
   }
 }
 .menu li:hover {
@@ -11375,7 +11485,7 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: #fff !important;
-  color: #ef4056;
+  color: #313135;
   font-weight: bold;
   top: auto;
   bottom: 30px;
@@ -11395,7 +11505,6 @@ ul {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 5px;
 }
 
 .banners__wrapper {
@@ -11624,7 +11733,7 @@ ul {
   color: #ef4056;
 }
 .products-wrapper .swiper-products .product-card .sale-perc {
-  background-color: #ef4056;
+  background-color: #313135;
   color: #fff;
   position: absolute;
   top: 0;
@@ -11745,7 +11854,7 @@ ul {
 }
 
 .main-footer {
-  background-color: #061738;
+  background-color: #313135;
   color: #e1e1e1;
   padding: 40px 0;
   margin-top: 40px;

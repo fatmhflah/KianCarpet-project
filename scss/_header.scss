@@ -36,7 +36,7 @@
         position: absolute;
         top: 18px;
         left: -4px;
-        background-color: $primary-color;
+        background-color: $secondary-color;
         color: #fff;
         @include font-size(11px);
       }
@@ -90,7 +90,7 @@
       display: flex;
       justify-content: end;
       .buy-button{
-        background-color: $dark-color;
+        background-color: $secondary-color;
         color: #fff;
         font-weight: 700;
         @include font-size(11px)
@@ -175,7 +175,8 @@
     width: 50%;
     background-color: #e8e8e8;
     &.active{
-      background-color: #c9c9c9;
+      background-color: $secondary-color;
+      color: #fff;
     }
   }
 
@@ -254,7 +255,7 @@
   display: block;
   white-space: nowrap; // prevent links form going to a new line
   @include media-breakpoint-down(lg){
-    padding: 18px;
+    padding: 12px;
   }
   &:hover{
     color: $primary-color;

@@ -20,6 +20,8 @@
 .buy-btn{
   width: 100%;
   border: 1px solid #e0e0e2;
+  background-color: $primary-color;
+  color: #fff;
   font-size: 13px;
   margin-top: 5px;
   @include font-size(14px);
