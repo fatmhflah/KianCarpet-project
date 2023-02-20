@@ -1,4 +1,8 @@
 $(document).ready(function() {
+
+
+
+
     $(window).scroll(function () {
         var showAfter = 800;
         if ($(this).scrollTop() > showAfter) {
@@ -48,7 +52,8 @@ $(document).ready(function() {
 
     })
 
-    $('.cart-wrapper').click(function () {
+    $('.cart-wrapper').click(function (e) {
+        e.stopPropagation()
         $('.box-cart').fadeToggle()
         $('.overlay').fadeToggle()
     })

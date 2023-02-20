@@ -1,10 +1,29 @@
 .category{
   display: flex;
   justify-content: space-between;
+  .category-products{
+    @include media-breakpoint-down(lg){
+      overflow-x: auto;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+  }
 
   .category-card{
-    transition: all .5s;
     height: 250px;
+    cursor: pointer;
+    //transition: all 0.5s;
+    img{
+      transition: all 0.5s;
+    }
+    &:hover{
+      img{
+        transform: scale(1.1);
+      }
+
+    }
+
 
     .category-link{
       display: inline-block;
@@ -12,6 +31,7 @@
       height: 100%;
 
       &:hover{
+
 
         .category-img:first-child , .category-img:last-child{
           filter: blur(2px);
@@ -26,13 +46,22 @@
       text-align: center;
       position: relative;
       width: 100%;
-      height: 80%;
+      //height: 80%;
+      height: 200px;
+
+      border: 1px solid #8b8b8b;
+      border-radius: 50%;
+      overflow: hidden;
       .category-img{
         width: 60%;
         position: absolute;
         top: 25px;
         height: 75%;
         object-fit: cover;
+        @include media-breakpoint-down(lg){
+          height: 70%;
+          top: 30px;
+        }
         &:first-child{
           transition: all 0.3s;
           right: 10px;
@@ -48,19 +77,31 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
-        height: 90%;
+        //height: 90%;
+        height: 180px;
+        object-fit: cover;
         transition: all 0.3s;
+        @include media-breakpoint-down(lg){
+          //height: 80%;
+        }
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }//category-card-header
 
     .category-card-footer{
       text-align: center;
+      margin-top: 15px;
     }//category-card-footer
 
     &__img{
       width: 100%;
       height: 200px;
       border-radius: 15px;
+      transition: all 0.5s;
      @include media-breakpoint-down(sm){
        height: auto;
      }
@@ -70,6 +111,7 @@
       text-align: center;
       color: #333;
       margin-top: 15px;
+      transition: a11 0.5s;
 
     }
   }//category-card
