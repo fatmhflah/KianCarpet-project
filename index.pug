@@ -1,32 +1,37 @@
 extends partials/layout
 block main
-    section.main-slider
+    .main-slider
         .container
             .swiper
                 .swiper-wrapper
                     .swiper-slide
                         a(href='#')
-                            img(src='images/item4-slider.jpg')
+                            picture
+                                img(src='images/item4-slider.jpg' alt='عکس اسلایدر شماره یک ')
                     .swiper-slide
                         a(href='#')
-                            img(src='images/item5-slider.jpg')
+                            picture
+                                img(src='images/item5-slider.jpg' alt='عکس اسلایدر شماره دو ')
 
                 .swiper-pagination
                 .swiper-button-prev
                     span.icon
-                .swiper-button-next ,
+                .swiper-button-next
                 .swiper-scrollbar
     //main-slider
-    section.index-sec
+    .index-sec
         .container
             .row.banners__wrapper
                 .col-lg-5
                     .banners__item
-                        img(src='images/banner-carpet20.jpg')
-                        img(src='images/banner-carpet17.webp')
+                        picture
+                            img(src='images/banner-carpet1.jpg' alt='بنر شماره یک')
+                        picture
+                            img(src='images/banner-carpet2.jpg' alt='بنر شماره دو')
                 .col-lg-7.col-auto
                     .banners__item.item-1
-                        img(src='images/banner-carpet26.jpg')
+                        picture
+                            img(src='images/banner-carpet26.jpg' alt='بنر شماره سه')
 
 
 
@@ -35,131 +40,177 @@ block main
         .container
             .index-widget-header
                 h3.title-line دسته بندی محصولات
-                button.btn.box-more
+                button.main-btn.box-more
                     span مشاهده همه
                     i.icon.bi.bi-arrow-left
 
-            .row
+            .row.category-products
+
                 .col-6.col-md-4.col-lg-3.col-xl-2
                     article.category-card
-                        a.category-link(href='#')
+                        a(href='#')
                             header.category-card-header
-                                img.category-img(src='images/farsh1.jpg')
-                                img.category-img.category-img-center(src='images/farsh3.jpg')
-                                img.category-img(src='images/farsh2.jpg')
-
+                                img(src='images/farsh8.jpg' alt='دسته بندی اول')
                             footer.category-card-footer
-                                p.title فرش قرمز
+                                h6.title فرش گبه
                 .col-6.col-md-4.col-lg-3.col-xl-2
                     article.category-card
-                        a.category-link(href='#')
+                        a(href='#')
                             header.category-card-header
-                                img.category-img(src='images/farsh4.jpg')
-                                img.category-img.category-img-center(src='images/farsh6.png')
-                                img.category-img(src='images/farsh5.jpg')
-
+                                img(src='images/farsh7.jpg' alt='دسته بندی اول')
                             footer.category-card-footer
-                                p.title فرش آبی
+                                h6.title فرش  وینتج
+
                 .col-6.col-md-4.col-lg-3.col-xl-2
                     article.category-card
-                        a.category-link(href='#')
+                        a(href='#')
                             header.category-card-header
-                                img.category-img(src='images/farsh2.jpg')
-                                img.category-img.category-img-center(src='images/farsh1.jpg')
-                                img.category-img(src='images/farsh3.jpg')
-
+                                img(src='images/farsh9.jpg' alt='دسته بندی اول')
                             footer.category-card-footer
-                                p.title فرش طوسی
+                                h6.title فرش چهل تکه
+
                 .col-6.col-md-4.col-lg-3.col-xl-2
                     article.category-card
-                        a.category-link(href='#')
+                        a(href='#')
                             header.category-card-header
-                                img.category-img(src='images/farsh3.jpg')
-                                img.category-img.category-img-center(src='images/farsh2.jpg')
-                                img.category-img(src='images/farsh1.jpg')
-
+                                img(src='images/farsh8.jpg' alt='دسته بندی اول')
                             footer.category-card-footer
-                                p.title فرش کرم
+                                h6.title گلیم
                 .col-6.col-md-4.col-lg-3.col-xl-2
                     article.category-card
-                        a.category-link(href='#')
+                        a(href='#')
                             header.category-card-header
-                                img.category-img(src='images/farsh1.jpg')
-                                img.category-img.category-img-center(src='images/farsh5.jpg')
-                                img.category-img(src='images/farsh6.png')
-
+                                img(src='images/farsh9.jpg' alt='دسته بندی اول')
                             footer.category-card-footer
-                                p.title فرش نارنجی
+                                h6.title فرش 1000 شانه
+
                 .col-6.col-md-4.col-lg-3.col-xl-2
                     article.category-card
-                        a.category-link(href='#')
+                        a(href='#')
                             header.category-card-header
-                                img.category-img(src='images/farsh1.jpg')
-                                img.category-img.category-img-center(src='images/farsh4.jpg')
-                                img.category-img(src='images/farsh2.jpg')
-
+                                img(src='images/farsh7.jpg' alt='دسته بندی اول')
                             footer.category-card-footer
-                                p.title فرش قرمز
-                .col-6.col-md-4.col-lg-3.col-xl-2
-                    article.category-card
-                        a.category-link(href='#')
-                            header.category-card-header
-                                img.category-img(src='images/farsh4.jpg')
-                                img.category-img.category-img-center(src='images/farsh3.jpg')
-                                img.category-img(src='images/farsh2.jpg')
-
-                            footer.category-card-footer
-                                p.title فرش فیروزه ای
-                .col-6.col-md-4.col-lg-3.col-xl-2
-                    article.category-card
-                        a.category-link(href='#')
-                            header.category-card-header
-                                img.category-img(src='images/farsh3.jpg')
-                                img.category-img.category-img-center(src='images/farsh5.jpg')
-                                img.category-img(src='images/farsh2.jpg')
-
-                            footer.category-card-footer
-                                p.title فرش سبز
-                .col-6.col-md-4.col-lg-3.col-xl-2
-                    article.category-card
-                        a.category-link(href='#')
-                            header.category-card-header
-                                img.category-img(src='images/farsh4.jpg')
-                                img.category-img.category-img-center(src='images/farsh1.jpg')
-                                img.category-img(src='images/farsh2.jpg')
-
-                            footer.category-card-footer
-                                p.title فرش مشکی
-                .col-6.col-md-4.col-lg-3.col-xl-2
-                    article.category-card
-                        a.category-link(href='#')
-                            header.category-card-header
-                                img.category-img(src='images/farsh1.jpg')
-                                img.category-img.category-img-center(src='images/farsh5.jpg')
-                                img.category-img(src='images/farsh2.jpg')
-
-                            footer.category-card-footer
-                                p.title فرش طوسی
-                .col-6.col-md-4.col-lg-3.col-xl-2
-                    article.category-card
-                        a.category-link(href='#')
-                            header.category-card-header
-                                img.category-img(src='images/farsh1.jpg')
-                                img.category-img.category-img-center(src='images/farsh2.jpg')
-                                img.category-img(src='images/farsh4.jpg')
-
-                            footer.category-card-footer
-                                p.title فرش گلبهی
-                .col-6.col-md-4.col-lg-3.col-xl-2
-                    article.category-card
-                        a.category-link(href='#')
-                            header.category-card-header
-                                img.category-img(src='images/farsh1.jpg')
-                                img.category-img.category-img-center(src='images/farsh3.jpg')
-                                img.category-img(src='images/farsh2.jpg')
-
-                            footer.category-card-footer
-                                p.title فرش آبی
+                                h6.title فرش 1000 شانه
+                //.col-6.col-md-4.col-lg-3.col-xl-2
+                //    article.category-card
+                //        a.category-link(href='#')
+                //            header.category-card-header
+                //                img.category-img(src='images/farsh1.jpg' alt='طرح فرش 1')
+                //                img.category-img.category-img-center(src='images/farsh3.jpg' alt='طرح فرش 1 ')
+                //                img.category-img(src='images/farsh2.jpg' alt='طرح فرش 1 ')
+                //
+                //            footer.category-card-footer
+                //                h6.title فرش قرمز
+                //.col-6.col-md-4.col-lg-3.col-xl-2
+                //    article.category-card
+                //        a.category-link(href='#')
+                //            header.category-card-header
+                //                img.category-img(src='images/farsh4.jpg' alt='طرح فرش 2')
+                //                img.category-img.category-img-center(src='images/farsh6.png' alt='طرح فرش 2')
+                //                img.category-img(src='images/farsh5.jpg' alt='طرح فرش 2')
+                //
+                //            footer.category-card-footer
+                //                h6.title فرش آبی
+                //.col-6.col-md-4.col-lg-3.col-xl-2
+                //    article.category-card
+                //        a.category-link(href='#')
+                //            header.category-card-header
+                //                img.category-img(src='images/farsh2.jpg' alt='طرح فرش 3')
+                //                img.category-img.category-img-center(src='images/farsh1.jpg' alt='طرح فرش 3')
+                //                img.category-img(src='images/farsh3.jpg' alt='طرح فرش 3')
+                //
+                //            footer.category-card-footer
+                //                h6.title فرش طوسی
+                //.col-6.col-md-4.col-lg-3.col-xl-2
+                //    article.category-card
+                //        a.category-link(href='#')
+                //            header.category-card-header
+                //                img.category-img(src='images/farsh3.jpg' alt='طرح فرش 4')
+                //                img.category-img.category-img-center(src='images/farsh2.jpg' alt='طرح فرش 4')
+                //                img.category-img(src='images/farsh1.jpg' alt='طرح فرش 4')
+                //
+                //            footer.category-card-footer
+                //                h6.title فرش کرم
+                //.col-6.col-md-4.col-lg-3.col-xl-2
+                //    article.category-card
+                //        a.category-link(href='#')
+                //            header.category-card-header
+                //                img.category-img(src='images/farsh1.jpg' alt='طرح فرش 5')
+                //                img.category-img.category-img-center(src='images/farsh5.jpg' alt='طرح فرش 5')
+                //                img.category-img(src='images/farsh6.png' alt='طرح فرش 5')
+                //
+                //            footer.category-card-footer
+                //                h6.title فرش نارنجی
+                //.col-6.col-md-4.col-lg-3.col-xl-2
+                //    article.category-card
+                //        a.category-link(href='#')
+                //            header.category-card-header
+                //                img.category-img(src='images/farsh1.jpg' alt='طرح فرش 6')
+                //                img.category-img.category-img-center(src='images/farsh4.jpg' alt='طرح فرش 6')
+                //                img.category-img(src='images/farsh2.jpg' alt='طرح فرش 6')
+                //
+                //            footer.category-card-footer
+                //                h6.title فرش قرمز
+                //.col-6.col-md-4.col-lg-3.col-xl-2
+                //    article.category-card
+                //        a.category-link(href='#')
+                //            header.category-card-header
+                //                img.category-img(src='images/farsh4.jpg' alt='طرح فرش 7')
+                //                img.category-img.category-img-center(src='images/farsh3.jpg' alt='طرح فرش 7')
+                //                img.category-img(src='images/farsh2.jpg' alt='طرح فرش 7')
+                //
+                //            footer.category-card-footer
+                //                h6.title فرش فیروزه ای
+                //.col-6.col-md-4.col-lg-3.col-xl-2
+                //    article.category-card
+                //        a.category-link(href='#')
+                //            header.category-card-header
+                //                img.category-img(src='images/farsh3.jpg' alt='طرح فرش 8')
+                //                img.category-img.category-img-center(src='images/farsh5.jpg' alt='طرح فرش 8')
+                //                img.category-img(src='images/farsh2.jpg' alt='طرح فرش 8')
+                //
+                //            footer.category-card-footer
+                //                h6.title فرش سبز
+                //.col-6.col-md-4.col-lg-3.col-xl-2
+                //    article.category-card
+                //        a.category-link(href='#')
+                //            header.category-card-header
+                //                img.category-img(src='images/farsh4.jpg' alt='طرح فرش 9')
+                //                img.category-img.category-img-center(src='images/farsh1.jpg' alt='طرح فرش 9')
+                //                img.category-img(src='images/farsh2.jpg' alt='طرح فرش 9')
+                //
+                //            footer.category-card-footer
+                //                h6.title فرش مشکی
+                //.col-6.col-md-4.col-lg-3.col-xl-2
+                //    article.category-card
+                //        a.category-link(href='#')
+                //            header.category-card-header
+                //                img.category-img(src='images/farsh1.jpg' alt='طرح فرش 10')
+                //                img.category-img.category-img-center(src='images/farsh5.jpg' alt='طرح فرش 10')
+                //                img.category-img(src='images/farsh2.jpg' alt='طرح فرش 10')
+                //
+                //            footer.category-card-footer
+                //                h6.title فرش طوسی
+                //.col-6.col-md-4.col-lg-3.col-xl-2
+                //    article.category-card
+                //        a.category-link(href='#')
+                //            header.category-card-header
+                //                img.category-img(src='images/farsh1.jpg' alt='طرح فرش 11')
+                //                img.category-img.category-img-center(src='images/farsh2.jpg' alt='طرح فرش 11')
+                //                img.category-img(src='images/farsh4.jpg' alt='طرح فرش 11')
+                //
+                //            footer.category-card-footer
+                //                h6.title فرش گلبهی
+                //.col-6.col-md-4.col-lg-3.col-xl-2
+                //    article.category-card
+                //        a.category-link(href='#')
+                //            header.category-card-header
+                //                img.category-img(src='images/farsh1.jpg' alt='طرح فرش 12')
+                //                img.category-img.category-img-center(src='images/farsh3.jpg' alt='طرح فرش 12')
+                //                img.category-img(src='images/farsh2.jpg' alt='طرح فرش 12')
+                //
+                //            footer.category-card-footer
+                //                h6.title فرش آبی
 
 
     //category
@@ -167,7 +218,7 @@ block main
         .container
             header.index-widget-header
                 h3.title-line محصولات پرفروش
-                button.btn.box-more
+                button.main-btn.box-more
                     span مشاهده همه
                     i.icon.bi.bi-arrow-left
             .swiper2.swiper-products
@@ -176,8 +227,8 @@ block main
                         .sale-perc 55%
                         .product-card__img
                             a(href='')
-                                img.show-img(src='images/best-product1.jpg')
-                                img.show-on-hover(src='images/best-product-h-1.jpg')
+                                img.show-img(src='images/best-product1.jpg' alt='پرفروش ترین محصولات شماره 1')
+                                img.show-on-hover(src='images/best-product-h-11.jpg' alt='پرفروش ترین محصولات شماره 1')
                         .product-card__body
                             p.title  فرش ماشینی طرح افشان گلریز زمینه سرمه ای
                             .product-card-footer
@@ -188,15 +239,15 @@ block main
                                     .price__current
                                         span.number 250000
                                         span تومان
-                                button.btn.icon.bi.bi-cart.buy-btn افزودن به سبد خرید
+                                button.main-btn.icon.bi.bi-cart.buy-btn افزودن به سبد خرید
 
 
 
                     article.swiper-slide.product-card
                         .product-card__img
                             a(href='#')
-                                img.show-img(src='images/best-product-2.jpg')
-                                img.show-on-hover(src='images/best-product-h-2.jpg')
+                                img.show-img(src='images/best-product-2.jpg' alt='پرفروش ترین محصولات شماره 2')
+                                img.show-on-hover(src='images/best-product-h-2.jpg' alt='پرفروش ترین محصولات شماره 1')
 
                         .product-card__body
                             p.title فرش کلاسیک گل برجسته زمینه دودی کد 814
@@ -205,13 +256,13 @@ block main
                                     .price__current
                                         span.number 250000
                                         span تومان
-                                button.btn.icon.bi.bi-cart.buy-btn افزودن به سبد خرید
+                                button.main-btn.icon.bi.bi-cart.buy-btn افزودن به سبد خرید
                     article.swiper-slide.product-card
                         .sale-perc 58%
                         .product-card__img
                             a(href='#')
-                                img.show-img(src='images/best-product-3.jpg')
-                                img.show-on-hover(src='images/best-product-h-3.jpg')
+                                img.show-img(src='images/best-product-3.jpg' alt='پرفروش ترین محصولات شماره 1')
+                                img.show-on-hover(src='images/best-product-h-3.jpg' alt='پرفروش ترین محصولات شماره 1')
                         .product-card__body
                             p.title فرش ماشینی گل برجسته 700 شانه زمینه صدفی کد 818
                             .product-card-footer
@@ -222,14 +273,14 @@ block main
                                     .price__current
                                         span.number 4850000
                                         span تومان
-                                button.btn.icon.bi.bi-cart.buy-btn افزودن به سبد خرید
+                                button.main-btn.icon.bi.bi-cart.buy-btn افزودن به سبد خرید
 
 
                     article.swiper-slide.product-card
                         .product-card__img
                             a(href='#')
-                                img.show-img(src='images/best-product-4.jpg')
-                                img.show-on-hover(src='images/best-product-h-4.jpg')
+                                img.show-img(src='images/best-product-4.jpg' alt='پرفروش ترین محصولات شماره 1')
+                                img.show-on-hover(src='images/best-product-h-4.jpg' alt='پرفروش ترین محصولات شماره 1')
                         .product-card__body
                             p.title فرش ماشینی 700 شانه گل برجسته زمینه کرم حاشیه دلفینی کد 3071
                             .product-card-footer
@@ -237,7 +288,7 @@ block main
                                     .price__current
                                         span.number 250000
                                         span تومان
-                                button.btn.icon.bi.bi-cart.buy-btn افزودن به سبد خرید
+                                button.main-btn.icon.bi.bi-cart.buy-btn افزودن به سبد خرید
 
 
                 .swiper-pagination
@@ -252,14 +303,14 @@ block main
                 .overlay
                 .parallax-content
                     h2.parallax-header همین الان خونه خودت را فرش کن
-                    button.btn.parallax-btn مشاهده تخفیف های امروز
+                    button.main-btn.parallax-btn مشاهده تخفیف های امروز
 
     //parallax
-    section.index-sec.products-wrapper
+    .index-sec.products-wrapper
         .container
             header.index-widget-header
                 h3.title-line جدیدترین محصولات
-                button.btn.box-more
+                button.main-btn.box-more
                     span مشاهده همه
                     i.icon.bi.bi-arrow-left
             .swiper2.swiper-products
@@ -268,8 +319,8 @@ block main
                         .sale-perc 55%
                         .product-card__img
                             a(href='')
-                                img.show-img(src='images/best-product1.jpg')
-                                img.show-on-hover(src='images/best-product-h-1.jpg')
+                                img.show-img(src='images/best-product1.jpg' alt='پرفروش ترین محصولات شماره 1')
+                                img.show-on-hover(src='images/best-product-h-1.jpg' alt='پرفروش ترین محصولات شماره 1')
                         .product-card__body
                             p.title  فرش ماشینی طرح افشان گلریز زمینه سرمه ای
                             .product-card-footer
@@ -280,14 +331,14 @@ block main
                                     .price__current
                                         span.number 250000
                                         span تومان
-                                button.btn.icon.bi.bi-cart.buy-btn افزودن به سبد خرید
+                                button.main-btn.icon.bi.bi-cart.buy-btn افزودن به سبد خرید
                                     //span.icon.bi.bi-suit-heart
 
                     article.swiper-slide.product-card
                         .product-card__img
                             a(href='#')
-                                img.show-img(src='images/best-product-2.jpg')
-                                img.show-on-hover(src='images/best-product-h-2.jpg')
+                                img.show-img(src='images/best-product-2.jpg' alt='پرفروش ترین محصولات شماره 1')
+                                img.show-on-hover(src='images/best-product-h-2.jpg' alt='پرفروش ترین محصولات شماره 1')
 
                         .product-card__body
                             p.title فرش کلاسیک گل برجسته زمینه دودی کد 814
@@ -296,15 +347,15 @@ block main
                                     .price__current
                                         span.number 250000
                                         span تومان
-                                button.btn.icon.bi.bi-cart.buy-btn افزودن به سبد خرید
+                                button.main-btn.icon.bi.bi-cart.buy-btn افزودن به سبد خرید
 
 
                     article.swiper-slide.product-card
                         .sale-perc 58%
                         .product-card__img
                             a(href='#')
-                                img.show-img(src='images/best-product-3.jpg')
-                                img.show-on-hover(src='images/best-product-h-3.jpg')
+                                img.show-img(src='images/best-product-3.jpg' alt='پرفروش ترین محصولات شماره 1')
+                                img.show-on-hover(src='images/best-product-h-3.jpg' alt='پرفروش ترین محصولات شماره 1')
                         .product-card__body
                             p.title فرش ماشینی گل برجسته 700 شانه زمینه صدفی کد 818
                             .product-card-footer
@@ -315,14 +366,14 @@ block main
                                     .price__current
                                         span.number 4850000
                                         span تومان
-                                button.btn.icon.bi.bi-cart.buy-btn افزودن به سبد خرید
+                                button.main-btn.icon.bi.bi-cart.buy-btn افزودن به سبد خرید
 
 
                     article.swiper-slide.product-card
                         .product-card__img
                             a(href='#')
-                                img.show-img(src='images/best-product-4.jpg')
-                                img.show-on-hover(src='images/best-product-h-4.jpg')
+                                img.show-img(src='images/best-product-4.jpg' alt='پرفروش ترین محصولات شماره 1')
+                                img.show-on-hover(src='images/best-product-h-4.jpg' alt='پرفروش ترین محصولات شماره 1')
                         .product-card__body
                             p.text فرش ماشینی 700 شانه گل برجسته زمینه کرم حاشیه دلفینی کد 3071
                             .product-card-footer
@@ -330,7 +381,7 @@ block main
                                     .price__current
                                         span.number 250000
                                         span تومان
-                                button.btn.icon.bi.bi-cart.buy-btn افزودن به سبد خرید
+                                button.main-btn.icon.bi.bi-cart.buy-btn افزودن به سبد خرید
 
 
                 .swiper-pagination
@@ -344,22 +395,22 @@ block main
             .row
                 .col-6.col-lg-3
                     a.service-card(href="#")
-                        img.service-card__img(src='images/product-return.svg' alt='')
+                        img.service-card__img(src='images/product-return.svg' alt=' بارگشت محصول')
                         h3.service-card__title بازگشت محصول
                         p.service-card__subtitle تا یک هفته بعد بازگشت بزنید
                 .col-6.col-lg-3
                     a.service-card(href="#")
-                        img.service-card__img(src='images/guarantee.svg')
+                        img.service-card__img(src='images/guarantee.svg' alt=' تضمین اصالت')
                         h3.service-card__title تضمین اصالت
                         p.service-card__subtitle برای تمام محصولات کیان کارپت
                 .col-6.col-lg-3
                     a.service-card(href="#")
-                        img.service-card__img(src='images/secure-payment.svg')
+                        img.service-card__img(src='images/secure-payment.svg' alt='پرداخت امن')
                         h3.service-card__title پرداخت امن
                         p.service-card__subtitle با خیال راحت خرید کنید
                 .col-6.col-lg-3
                     a.service-card(href="#")
-                        img.service-card__img(src='images/free-delivery.svg')
+                        img.service-card__img(src='images/free-delivery.svg' alt='ارسال رایگان')
                         h3.service-card__title ارسال رایگان
                         p.service-card__subtitle سفارش های بالای 500 هزار تومان
 
@@ -369,7 +420,7 @@ block main
         .container
             header.index-widget-header
                 h3.title-line آخرین مقالات
-                button.btn.box-more
+                button.main-btn.box-more
                     span مشاهده همه
                     i.icon.bi.bi-arrow-left
 
@@ -377,7 +428,7 @@ block main
                 .swiper-wrapper
                     a.mag-card.swiper-slide
                         .mag-card-header
-                            img.mag-card__img(src='images/mag-item1.jpg')
+                            img.mag-card__img(src='images/mag-item1.jpg' alt='مقاله شماره 1')
                         .mag-card-body
                             h3.mag-card__title راهنمای کامل انتخاب و خرید فرش
                             p.mag-card__subtitle منظور از تراکم فرش ماشینی چیست و چه تاثیری در کیفیت فرش دارد؟ بررسی دلایل خرید فرش هایی با تراکم بالا
@@ -385,7 +436,7 @@ block main
 
                     a.mag-card.swiper-slide
                         .mag-card-header
-                            img.mag-card__img(src='images/mag-item2.jpg')
+                            img.mag-card__img(src='images/mag-item2.jpg' alt='مقاله شماره 2')
                         .mag-card-body
                             h3.mag-card__title فرش مناسب برای هتل چه ویژگی هایی دارد؟
                             p.mag-card__subtitle انتخاب فرش هتل بر مبنای کیفیت نگهداری و تعداد دفعاتی که در سال فرش به شستشوی نیاز دارد.
@@ -394,7 +445,7 @@ block main
 
                     a.mag-card.swiper-slide
                         .mag-card-header
-                            img.mag-card__img(src='images/mag-item3.jpg')
+                            img.mag-card__img(src='images/mag-item3.jpg' alt='مقاله شماره 3')
                         .mag-card-body
                             h3.mag-card__title ترفندهای آسان و موثر، در جلوگیری از سرخوردن فرش
                             p.mag-card__subtitle استفاده از ترمز فرش متری ,استفاده از پد لغزش , استفاده از چسب حرارتی , استفاده از وسایل سنگین بر روی فرش
@@ -402,7 +453,7 @@ block main
 
                     a.mag-card.swiper-slide
                         .mag-card-header
-                            img.mag-card__img(src='images/mag-item4.jpg')
+                            img.mag-card__img(src='images/mag-item4.jpg' alt='مقاله شماره 4')
                         .mag-card-body
                             h3.mag-card__title برای خرید فرش راه پله چه نکاتی را در نظر بگیریم؟
                             p.mag-card__subtitle با توجه به اینکه راه پله ها هم یکی از قسمت های مهم در دکوراسیون بشمار می آیند و تاثیر شگرفی در زیبایی بخشی به دکوراسیون دارند ، لذا انتخاب کفپوش مناسب برای این قسمت از فضای دکوراسیون بسیار حائز اهمیت می باشد. انتخاب فرش راه پله ای، به گونه ای که با سایر اجزای دکوراسیون متناسب باشد و همچنین به لحاظ کاربردی، بیشترین کارایی را در محیط داشته باشد، نیازمند در نظر گرفتن پاره ای مسائل می باشد.
