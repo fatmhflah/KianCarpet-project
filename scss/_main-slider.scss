@@ -1,6 +1,6 @@
 .main-slider{
   .swiper{
-    height: 630px;
+    height: 400px;
     transition: all 1s;
     @include media-breakpoint-down(lg){
       height: 250px;

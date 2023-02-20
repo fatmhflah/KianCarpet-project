@@ -9,7 +9,7 @@
     align-items: center;
   }//header-wrapper
   .top-header{
-    height: 115px;
+    height: 90px;
     .header-logo{
       width: 150px;
       img{
@@ -137,6 +137,7 @@
     }
     .icon{
       @include font-size(30px);
+      margin-right: 8px;
     }
 
 
@@ -328,7 +329,7 @@
   // dropdown position and style
   .menu-hasdropdown > ul {
     min-width: 270px;
-    border: 1px solid $menu_border;
+    border: $menu_border;
     position: absolute;
     top:100%;
     right: 0;

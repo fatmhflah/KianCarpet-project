@@ -24,9 +24,11 @@
   color: #fff;
   font-size: 13px;
   margin-top: 5px;
+  padding: 8px;
   @include font-size(14px);
   &:hover{
     border: 1px solid red;
+    background: transparent;
     color: black;
   }
   &:before{
