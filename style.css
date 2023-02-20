@@ -6209,6 +6209,12 @@ ul {
 .category .category-card img {
   transition: all 0.5s;
 }
+.category .category-card .category-card-header {
+  transition: all 0.5s;
+}
+.category .category-card:hover .category-card-header {
+  box-shadow: 1px 2px 5px 1.5px #b8b8c2;
+}
 .category .category-card:hover img {
   transform: scale(1.1);
 }
@@ -6228,9 +6234,13 @@ ul {
   position: relative;
   width: 100%;
   height: 200px;
-  border: 1px solid #8b8b8b;
   border-radius: 50%;
   overflow: hidden;
+}
+@media (max-width: 991.98px) {
+  .category .category-card .category-card-header {
+    height: 175px;
+  }
 }
 .category .category-card .category-card-header .category-img {
   width: 60%;
@@ -6487,7 +6497,7 @@ ul {
   margin: 0 auto;
   display: block;
   margin-bottom: 25px;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 .services .service-card__title {
   font-size: 1.0625rem;
