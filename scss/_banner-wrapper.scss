@@ -30,7 +30,10 @@
       }
       &:hover {
         //transform: skew(1deg);
-        filter: brightness(0.8);
+        //filter: brightness(0.8);
+        //box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        transform: translate3d(0px, 5px, 5px);
       }
     }
   }//banners__item

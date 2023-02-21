@@ -102,11 +102,12 @@ header.main-header(id="home")
 
             .mobile-header__logo
                 img(src='images/kian-carpet-logo.png' alt='logoSite')
-            .d-flex
+            .mobile-info.d-flex
                 .mobile-header__cart.cart-wrapper
                     i.bi.bi-cart.icon
+                    span.count 0
                 .mobile-header__login
-                    i.icon.bi.bi-person
+                    i.icon.person-icon.bi.bi-person
 
 
 .mobile-header-nav.shared-box
@@ -114,6 +115,10 @@ header.main-header(id="home")
         span.close.close-menu
             i.bi.bi-x-circle.ms-2
             span.title بستن
+        span.wishlist-wrapper
+            i.icon.bi.bi-suit-heart
+            span.count 0
+
     .header-search
         form.form(method='get')
             input.header-search__input(type='text' placeholder='جستجوی محصولات...')
@@ -131,6 +136,7 @@ header.main-header(id="home")
                 a(href='#') درباره ما
             li
                 a(href='#') تماس با ما
+
         ul.menu-category
             ul
                 li

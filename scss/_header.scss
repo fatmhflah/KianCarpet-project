@@ -24,22 +24,7 @@
       .icon{
         @include font-size(30px);
       }
-      .count{
-        width: 20px;
-        height: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 600;
-        line-height: 20px;
-        border-radius: 50%;
-        position: absolute;
-        top: 18px;
-        left: -4px;
-        background-color: $secondary-color;
-        color: #fff;
-        @include font-size(11px);
-      }
+
       .info-wrapper{
         display: flex;
         align-items: center;
@@ -81,7 +66,7 @@
         cursor: pointer;
       }
     }
-  }
+  }//top-header
   .bottom-header{
     align-items: center;
     height: 55px;
@@ -93,6 +78,7 @@
         background-color: $secondary-color;
         color: #fff;
         font-weight: 700;
+        padding: 8px;
         @include font-size(11px)
       }
       .login-button{
@@ -108,7 +94,7 @@
           @include font-size(25px)
         }
       }
-    }
+    }//login-header-wrapper
   }//bottom-header
 
   .desktop-header{
@@ -137,38 +123,46 @@
     }
     .icon{
       @include font-size(30px);
-      margin-right: 8px;
+      &.person-icon{
+        margin-right: 12px;
+        @include font-size(35px);
+      }
+    }
+    .cart-wrapper{
+      position: relative;
     }
 
 
 
-  }
+
+  }//mobile-header
 
 }//main-header
 .mobile-header-nav{
-  //height: 100%;
-  //box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  //background: #fff;
-  //width: 80%;
-  //z-index: 999999999;
-  //position: fixed;
-  //top: 0;
+
   display: none;
-  @include media-breakpoint-down(lg){
-    //display: block;
+  @include media-breakpoint-down(sm){
+    width: 75%;
+  }
+  @include media-breakpoint-between(sm , lg){
+    width: 57%;
   }
   .header-nav{
-    //border-bottom: 1px solid rgb(0 0 0 / 11%);
-    //padding: 33px 15px;
-    //display: flex;
-    //align-items: center;
+
     .close-menu{
       @include font-size(25px);
       line-height: 0;
     }
 
   }
-}
+  .wishlist-wrapper{
+    position: relative;
+    .icon{
+      @include font-size(27px);
+    }
+  }
+
+}//mobile-header-nav
 .mobile-menu-tab{
   display: flex;
   justify-content: space-between;
@@ -182,11 +176,6 @@
   }
 
 }
-
-
-
-
-
 
 
 .bg-header-categories{
