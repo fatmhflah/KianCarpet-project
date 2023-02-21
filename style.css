@@ -5855,7 +5855,6 @@ ul {
 }
 .main-header .mobile-header__logo {
   width: 140px;
-  height: 50px;
 }
 .main-header .mobile-header__logo img {
   width: 100%;
@@ -6137,7 +6136,7 @@ ul {
 }
 
 .main-slider .swiper {
-  height: 570px;
+  height: 550px;
   transition: all 1s;
 }
 @media (max-width: 991.98px) {
@@ -6247,14 +6246,14 @@ ul {
 }
 .banners__item img:hover {
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-  transform: translate3d(0px, 5px, 5px);
+  transform: translate3d(0px, -5px, 5px);
 }
 
 .category {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .category .category-products {
     overflow-x: auto;
     display: flex;
@@ -6307,14 +6306,20 @@ ul {
 }
 @media (max-width: 575.98px) {
   .category .category-card .category-card-header {
-    height: 175px;
-    width: 175px;
+    height: 160px;
+    width: 160px;
   }
 }
 @media (min-width: 576px) and (max-width: 991.98px) {
   .category .category-card .category-card-header {
     height: 200px;
     width: 200px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .category .category-card .category-card-header {
+    height: 170px;
+    width: 170px;
   }
 }
 .category .category-card .category-card-header .category-img {
@@ -6441,6 +6446,11 @@ ul {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 575.98px) {
+  .products-wrapper .swiper-products .product-card {
+    padding: 10px;
+  }
+}
 .products-wrapper .swiper-products .product-card:hover .show-img {
   opacity: 0;
 }
@@ -6494,11 +6504,21 @@ ul {
   margin-right: 5px;
   font-size: 1.125rem;
 }
+@media (max-width: 575.98px) {
+  .products-wrapper .swiper-products .product-card__body .price__current {
+    font-size: 1rem;
+  }
+}
 .products-wrapper .swiper-products .product-card__body .price__off {
   color: red;
   text-decoration: line-through;
   font-weight: 400;
   font-size: 0.875rem;
+}
+@media (max-width: 575.98px) {
+  .products-wrapper .swiper-products .product-card__body .price__off {
+    font-size: 0.75rem;
+  }
 }
 .products-wrapper .swiper-products .product-card__body .icon {
   transition: all 0.2s;
