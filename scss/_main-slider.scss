@@ -1,6 +1,7 @@
 .main-slider{
   .swiper{
     height: 550px;
+    border-radius: 0 0 $border-radius-sm $border-radius-sm;
     transition: all 1s;
     @include media-breakpoint-down(lg){
       height: 250px;
