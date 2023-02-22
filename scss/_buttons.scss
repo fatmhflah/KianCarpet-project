@@ -22,10 +22,10 @@
   border: 1px solid #e0e0e2;
   background-color: $primary-color;
   color: #fff;
-  font-size: 13px;
   margin-top: 5px;
-  padding: 8px;
+  padding: 5px;
   @include font-size(14px);
+
   &:hover{
     border: 1px solid red;
     background: transparent;

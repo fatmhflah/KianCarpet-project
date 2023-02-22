@@ -1,18 +1,35 @@
 .main-footer{
   background-color: $secondary-color;
   color: #e1e1e1;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
   margin-top: 40px;
+  .footer-wrapper {
+    padding-bottom: 30px;
+  }
 
   .footer-box{
     .footer-box-logo{
       width: 200px;
-      margin-bottom: $gap-lg;
-      @include media-breakpoint-down(sm){
+      margin-bottom: 50px;
+      @include media-breakpoint-down(lg){
         margin: 0 auto;
+        margin-bottom: 45px;
       }
       img{
         width: 100%;
+      }
+
+      .header-logo {
+        width: auto;
+        .logo-title{
+          color: #fff;
+          margin-right: 52px;
+          @include font-size(14px);
+          &:before , &:after {
+            background-color: #fffcfc;
+          }
+
+        }
       }
     }//footer-box-logo
 
@@ -24,7 +41,7 @@
       }
       .text{
         position: relative;
-        @include font-size(20px);
+        @include font-size(16px);
       }
     }//footer-box__title
 
@@ -89,5 +106,38 @@
 
     }//footer-box__body
   }//footer-box
+
+  .footer-info {
+    width: 100%;
+    background: #fff;
+    color: #000;
+    height: 30px;
+    @include media-breakpoint-down(lg){
+      height: 70px;
+    }
+    &__box {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+     @include media-breakpoint-down(lg){
+       justify-content: center;
+     }
+
+
+      a{
+        color: $primary-color;
+        margin: 0 5px;
+      }
+
+      .logo-site{
+        width: 40px;
+        height: 40px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }//footer-box
+  }
 
 }

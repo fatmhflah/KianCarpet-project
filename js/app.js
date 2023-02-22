@@ -1,7 +1,7 @@
 $(document).ready(function() {
 //for back-to-top button
     $(window).scroll(function () {
-        var showAfter = 800;
+        let showAfter = 800;
         if ($(this).scrollTop() > showAfter) {
             $('.back-to-top').addClass('show');
         } else {
@@ -20,7 +20,6 @@ $(document).ready(function() {
 
     $('.close-menu').click(function () {
         $('.mobile-header-nav').fadeToggle()
-        $('.overlay').fadeToggle()
     })
     $('.mobile-header__close').click(function (e) {
         e.stopPropagation()

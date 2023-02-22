@@ -1,10 +1,15 @@
 footer.main-footer
     .container
-        .row.justify-content-between.flex-column.flex-lg-row
+        .row.justify-content-between.flex-column.flex-lg-row.footer-wrapper
             .col-auto.col-lg-4
                 .footer-box
                     .footer-box-logo
-                        img(src='images/kian-carpet-logo.png' alt='لوگو سایت')
+                        .header-logo
+                            a(href='#')
+                                img(src='../images/kian-carpet-low-resolution-logo-color-on-transparent-background (3).png' alt='logoSite')
+                                span.logo-title  فـــــــرش کیــــــــان
+                        //img(src='images/kian-carpet-low-resolution-logo-color-on-transparent-background (3).png' alt='لوگو سایت')
+                        //span فرش کیان
                     .footer-box__body
                         p.text بزرگترین و تخصصی‌ترین فروشگاه فرش ایران با بیش از ۸ سال تجربه‌، پیش روی شماست. وجودِ انواع فرش‌ ماشینی، فرش‌ دستبافت، فرش کلاسیک، فرش کودک و تابلو فرش به همراه کامل‌ترین مجموعه فرش فانتزی و وارداتی از کشورهایی مانند ترکیه و هند چشم اندازی تماشایی از هنرِ فرش ایران و جهان را در شهر فرش آفریده است.
             .col-auto.col-lg-2
@@ -51,6 +56,18 @@ footer.main-footer
                             img(src='images/enamad1.png' alt='نماد الکترونیک')
                         //.box
                         //    img(src='images/enamad2.webp')
+    .footer-info.d-flex.justify-content-between.align-items-center
+        .container
+            .row
+                .col-lg-6.footer-info__box
+                    span تمامی حقوق این سایت متعلق به
+                    a(href='') فرش کیان
+                    span میباشد
+                .col-lg-6.justify-content-center.justify-content-lg-end.footer-info__box
+                    span.text طراحی شده در فناوری اطلاعات آیتیسا
+                    span.logo-site
+                        img(src='images/itsa-logo.gif')
+
 
 
 

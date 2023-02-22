@@ -65,8 +65,8 @@
       border-radius: 50%;
       overflow: hidden;
       @include media-breakpoint-down(sm){
-        height: 160px;
-        width: 160px;
+       width: 150px;
+       height: 150px;
       }
       @include media-breakpoint-between(sm , lg){
         height: 200px;

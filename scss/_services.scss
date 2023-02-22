@@ -4,9 +4,15 @@
   }
   .service-card{
     text-align: center;
+    display: inline-block;
+
+    @include media-breakpoint-down(lg){
+      margin-bottom: 30px;
+    }
 
     &:hover .service-card__img{
       transform: scale(1.1);
+
     }
 
     &__img{
@@ -22,6 +28,7 @@
     }
     &__subtitle{
       color: #7a7a7a;
+      margin: 0;
       @include font-size(14px)
     }
   }//service-card
